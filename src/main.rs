@@ -1,3 +1,11 @@
+mod sum;
+
 fn main() {
-    println!("Hello, world!");
+    let x = sum::sum(1,2);
+    let a = String::from("a");
+    {
+        let b = a;
+    }
+
+    println!("sum {}", b);
 }
